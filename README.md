@@ -24,7 +24,7 @@ env.render()
 env.reset()
 
 for _ in range(10000):
-	# call sleep() so that it can render in a normal speed
+	# call sleep() so that it can render at a normal speed
 	time.sleep(1./60.)
 	action = env.action_space.sample()
 	obs, reward, done, _ = env.step(action)
